@@ -6,15 +6,16 @@
 
 body {
   background-color: #F2F2F2;
+  font-family: poppins;
 }
 
 .main-wrapper {
   display: flex;
   justify-content: center;
 
-  @media (max-width: 800px) {
-    flex-direction: column;
-  }
+  /* @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+  } */
 }
 
 header {
@@ -118,6 +119,11 @@ label {
   top: 32%;
   left: 60%;
   transform: translate(-50%, -50%);
+
+  /* @media (max-width: 1024px) {
+    left: 0;
+    margin: 0 50%;
+  } */
 }
 
 .search-form {
@@ -142,3 +148,49 @@ label {
   top: 82%;
   left: 68%;
 }
+
+
+.trending-ads {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  background-color: white;
+  margin-top: 40px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-below, .item img {
+  padding: 9px;
+}
+
+
+.rooms {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 9px;
+    border-top: 1px solid #CFEAD6;
+    margin-bottom: 6px;
+}
+
+.rooms > p {
+  padding: 8px;
+}
+
+.house-img {
+  width: 19vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.vip-top {
+  background-color: #29B24E;
+  border-radius: 20px;
+  width: 20px;
+}
+
