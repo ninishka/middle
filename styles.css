@@ -6,7 +6,9 @@
 
 body {
   background-color: #F2F2F2;
-  font-family: poppins;
+  font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  font-style: normal;
 }
 
 .main-wrapper {
@@ -60,8 +62,44 @@ header {
   box-shadow: none;
   border-radius: 10px;
   color: white;
-  margin-right: -4vw;
+  margin-right: -7vw;
+  @media (max-width: 925px) {
+    margin-left: -2vw;
+  }
+
+  @media (max-width: 563px) {
+    display: none;
+   }
 }
+
+.search-header {
+  display: none;
+
+  @media (max-width: 563px) {
+    display: flex;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+
+}
+
+
+
+
+.logo {
+  margin-left: -10vw;
+
+  @media (max-width: 977px) {
+    margin-left: -7vw;
+  }
+
+}
+
+
+
 
 .checkbox-wrapper {
   background-color: #F8F8F8;
@@ -106,14 +144,16 @@ label {
 
 
 
-
-
 .checkbox-item input[type=checkbox] {
   /* accent-color: #29B24E; */
   accent-color: forestgreen;
 
   margin-bottom: 15px;
   
+}
+
+.form1 {
+  font-size: 13px;
 }
 
 .checkbox2-wrap {
@@ -155,14 +195,40 @@ label {
 }
 
 .img-h1-content {
-  font-size: 48px; 
-  font-weight: 300; 
+  font-size: 39px;  
   text-align: center; 
 
-  @media (max-width: 650px) {
+   
+  @media (max-width: 771px) {
     font-size: 30px;
+
   }
+
+  
+  @media (max-width: 650px) {
+    font-size: 25px;
+  }
+  @media (max-width: 500px) {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
 }
+
+
+.img-p-content {
+  text-align: center; 
+  margin-top: 18px; 
+  font-size: 18px;
+
+  @media (max-width: 500px) {
+    font-size: 10px;
+    margin-top: 30px;
+  }
+
+}
+
+
 
 .search-form {
  border-radius: 1px;
@@ -172,9 +238,7 @@ label {
  margin-top: 29px;
 }
 
-.logo {
-  margin-left: -5vw;
-}
+
 
 .search-input {
     border: 1px transparent;
@@ -183,12 +247,26 @@ label {
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+
+    @media (max-width: 613px) {
+      width: 30%;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 563px) {
+     display: none;
+    }
+
 }
 
+
 .search-img {
+  top: 87%;
+  left: 67%;
   position: absolute;
-  top: 84%;
-  left: 68%;
+  @media (max-width: 563px) {
+    display: none;
+   }
 }
 
 
@@ -208,6 +286,10 @@ label {
 
 .green-price {
   font-size: 25px;
+}
+
+h3 {
+  color: black;
 }
 
 .item {

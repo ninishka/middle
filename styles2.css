@@ -6,7 +6,9 @@
 
 body {
   background-color: #F2F2F2;
-  font-family: poppins;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* .main-wrapper {
@@ -154,6 +156,10 @@ header {
 
 .rooms > p {
   padding: 8px;
+}
+
+h3 {
+  color: black;
 }
 
 .house-img {
