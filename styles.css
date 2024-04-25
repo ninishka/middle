@@ -34,6 +34,8 @@ header {
   text-decoration: none;
   list-style-type: none;
   margin: 5px 30px;
+  border-bottom: 3px solid transparent;
+  position: relative;
 }
 
 .underline-on-hover > li {
@@ -162,6 +164,16 @@ label {
   margin-top: 15px;
 }
 
+.big-img {
+  position: relative;
+}
+
+.main-img {
+  width: 100%;
+  max-height: 141vh;
+}
+
+
 
 .search-img-wrap {
   margin-top: 40px;
@@ -170,8 +182,8 @@ label {
 .img-content {
   content: "Overlay Text";
   position: absolute;
-  top: 32%;
-  left: 60%;
+  top: 22%;
+  left: 49%;
   transform: translate(-50%, -50%);
 
   @media (max-width: 1200px) {
@@ -237,6 +249,7 @@ label {
  flex-direction: row;
  justify-content: center;
  margin-top: 29px;
+ position: relative;
 }
 
 
@@ -248,11 +261,11 @@ label {
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-
+/* 
     @media (max-width: 613px) {
       width: 30%;
       margin-top: 30px;
-    }
+    } */
 
     @media (max-width: 563px) {
      display: none;
@@ -262,8 +275,8 @@ label {
 
 
 .search-img {
-  top: 87%;
-  left: 67%;
+  top: 29%;
+  left: 68%;
   position: absolute;
   @media (max-width: 563px) {
     display: none;
